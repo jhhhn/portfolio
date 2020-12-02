@@ -1,0 +1,34 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('../../assets/images/background.jpg');
+  background-position: right;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba($color-4, 0.9);
+}
+
+body,
+html {
+  box-sizing: border-box;
+  user-select: none;
+  overscroll-behavior: none;
+}
+
+ul {
+  list-style: none;
+}

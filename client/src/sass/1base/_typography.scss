@@ -1,0 +1,21 @@
+body {
+  word-spacing: 0.15rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.heading-primary {
+  font-family: $font-2;
+  font-size: 3rem;
+  color: rgba($color-2, 0.8);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}

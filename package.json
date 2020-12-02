@@ -1,0 +1,30 @@
+{
+  "name": "jhhhn",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "main.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node server/seeder",
+    "data:destroy": "node server/seeder -d",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jhhhn/jhhhn.git"
+  },
+  "author": "John Allen de Chavez <johnallendechavez23@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhhhn/jhhhn/issues"
+  },
+  "homepage": "https://github.com/jhhhn/jhhhn#readme",
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  },
+  "dependencies": {}
+}
